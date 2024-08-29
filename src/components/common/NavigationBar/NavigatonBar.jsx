@@ -26,7 +26,7 @@ const NavigationBar = ({ type }) => {
   };
 
   return (
-    <S.Layout>
+    <S.Layout isMenuOpen={isMenuOpen}>
       {type === 'admin' ? (
         <S.Container>
           <S.LogoImg onClick={handleClickAdminLogo} alt='epris-logo' />

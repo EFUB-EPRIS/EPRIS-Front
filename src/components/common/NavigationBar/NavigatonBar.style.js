@@ -10,9 +10,10 @@ const S = {
     position: relative;
     display: flex;
     flex-direction: column;
-
     padding: 1rem 10rem;
     width: calc(100% - 20rem);
+    background-color: ${({ isMenuOpen }) =>
+      isMenuOpen ? 'var(--black)' : 'none'};
 
     @media (max-width: 750px) {
       width: 100%;
